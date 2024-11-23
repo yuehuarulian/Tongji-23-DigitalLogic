@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="E:\digilent\program\usb\SDK\SDK_Export\usb_hw_platform\system_bd.bmm" key="usb_hw_platform-bmmFile"/>
+	<item value="E:\digilent\program\usb\SDK\SDK_Export\usb_hw_platform\system.bit" key="usb_hw_platform-bitFile"/>
+	<item value="E:\digilent\program\usb\SDK\SDK_Export\usb\Debug\usb.elf" key="usb_hw_platform-microblaze_0-initElf"/>
+</section>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="I:\labz\wlan\SDK\SDK_Export\wlan_hw_platform\system_bd.bmm" key="wlan_hw_platform-bmmFile"/>
+	<item value="I:\labz\wlan\SDK\SDK_Export\wlan_hw_platform\system.bit" key="wlan_hw_platform-bitFile"/>
+	<item value="I:\labz\wlan\SDK\SDK_Export\eth_test\Debug\eth_test.elf" key="wlan_hw_platform-microblaze_0-initElf"/>
+</section>

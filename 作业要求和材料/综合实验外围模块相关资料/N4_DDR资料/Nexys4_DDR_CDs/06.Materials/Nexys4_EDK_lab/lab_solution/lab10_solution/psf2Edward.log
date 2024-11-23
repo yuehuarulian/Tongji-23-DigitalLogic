@@ -1,0 +1,92 @@
+WARNING:EDK:4092 - IPNAME: proc_sys_reset, INSTANCE: proc_sys_reset_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 26 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 39 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_i_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 46 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 55 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_d_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 62 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: microblaze_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 71 
+WARNING:EDK:4092 - IPNAME: microblaze, INSTANCE: microblaze_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 78 
+WARNING:EDK:4092 - IPNAME: mdm, INSTANCE: debug_module - Pre-Production version
+   not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 101 
+WARNING:EDK:4092 - IPNAME: clock_generator, INSTANCE: clock_generator_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 114 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi4lite_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 126 
+WARNING:EDK:4092 - IPNAME: axi_uartlite, INSTANCE: RS232 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 134 
+WARNING:EDK:4092 - IPNAME: proc_sys_reset, INSTANCE: proc_sys_reset_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 26 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 39 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_i_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 46 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 55 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_d_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 62 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: microblaze_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 71 
+WARNING:EDK:4092 - IPNAME: microblaze, INSTANCE: microblaze_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 78 
+WARNING:EDK:4092 - IPNAME: mdm, INSTANCE: debug_module - Pre-Production version
+   not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 101 
+WARNING:EDK:4092 - IPNAME: clock_generator, INSTANCE: clock_generator_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 114 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi4lite_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 126 
+WARNING:EDK:4092 - IPNAME: axi_uartlite, INSTANCE: RS232 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\Project\N4\lab10\system.mhs line 134 
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 3 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.

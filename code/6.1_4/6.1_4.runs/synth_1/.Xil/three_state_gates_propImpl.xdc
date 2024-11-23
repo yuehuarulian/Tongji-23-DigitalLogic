@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:E:/szlj/vivado_save/6.1_4/6.1_4.srcs/constrs_1/new/three_state_gates.xdc rfile:../../../6.1_4.srcs/constrs_1/new/three_state_gates.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN J15 [get_ports iA]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN M17 [get_ports iEna]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN H17 [get_ports oTri]

@@ -1,0 +1,7 @@
+Running: xsim.dir/Divider_tb_behav/xsimk.exe -simmode gui -wdb Divider_tb_behav.wdb -simrunnum 0 -socket 64008
+Design successfully loaded
+Design Loading Memory Usage: 9284 KB (Peak: 9284 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 9920 KB (Peak: 9920 KB)
+Simulation CPU Usage: 0 ms

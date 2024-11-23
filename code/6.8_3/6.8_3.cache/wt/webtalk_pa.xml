@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Nov 28 13:06:47 2023">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="b53d0e6356d04886976958cc6f913fbf" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="SimulationRun" value="5" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="1" type="GuiResourceData"/>
+<property name="OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Regfiles_tb" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Regfiles (Regfiles.v" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Regfiles_tb (Regfiles_tb.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Simulation Settings], 10, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, E:/szlj/vivado_save/6.8_3/6.8_3.xpr, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectSettingsSimulationPanel_TARGET_SIMULATOR, ModelSim Simulator, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="3" type="GuiResourceData"/>
+<property name="RDIResource.ProgressDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 102, 203" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 107, 145" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 108, 187" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 112, 105" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 113, 55" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 120, 138" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 121, 184" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 124, 191" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 131, 180" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 138, 121" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 148, 162" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 151, 195" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 157, 161" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 163, 143" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 164, 142" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 164, 238" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 165, 177" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 171, 80" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 177, 102" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 184, 123" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 192, 90" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 195, 165" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 199, 140" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 201, 169" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 203, 128" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 208, 176" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 210, 165" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 226, 91" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 236, 142" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 237, 134" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 238, 176" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 239, 216" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 239, 233" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 243, 203" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 255, 171" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 257, 150" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 26, 177" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 26, 222" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 270, 102" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 270, 175" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 286, 100" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 310, 145" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 331, 86" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 46, 223" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 47, 164" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 47, 180" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 48, 103" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 48, 203" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 49, 145" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 55, 120" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 79, 181" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 79, 197" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 82, 173" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 83, 140" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 84, 159" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 87, 164" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 87, 165" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 87, 48" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 89, 177" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 91, 83" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 91, 88" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 96, 145" value="1" type="GuiResourceData"/>
+<property name="Regfiles.v, 96, 181" value="2" type="GuiResourceData"/>
+<property name="Regfiles.v, 99, 90" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 103, 218" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 117, 159" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 133, 138" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 150, 218" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 150, 94" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 161, 222" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 20, 135" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 207, 181" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 21, 128" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 21, 144" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 22, 162" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 22, 163" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 22, 201" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 23, 108" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 23, 183" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 265, 214" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 27, 128" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 271, 154" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 358, 264" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 36, 137" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 43, 177" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 43, 87" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 465, 167" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 47, 232" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 48, 109" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 48, 140" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 49, 179" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 50, 164" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 63, 214" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 69, 124" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 72, 222" value="1" type="GuiResourceData"/>
+<property name="Regfiles_tb.v, 94, 103" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="72" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="48" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

@@ -1,0 +1,162 @@
+WARNING:EDK:4092 - IPNAME: proc_sys_reset, INSTANCE: proc_sys_reset_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 34 
+WARNING:EDK:4092 - IPNAME: mii_to_rmii, INSTANCE: mii_to_rmii_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 47 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 68 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_i_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 75 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 84 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_d_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 91 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: microblaze_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 100 
+WARNING:EDK:4092 - IPNAME: microblaze, INSTANCE: microblaze_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 107 
+WARNING:EDK:4092 - IPNAME: mdm, INSTANCE: debug_module - Pre-Production version
+   not verified on hardware for architecture 'artix7' - I:\labz\wlan\system.mhs
+   line 136 
+WARNING:EDK:4092 - IPNAME: clock_generator, INSTANCE: clock_generator_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 149 
+WARNING:EDK:4092 - IPNAME: axi_timer, INSTANCE: axi_timer_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 168 
+WARNING:EDK:4092 - IPNAME: axi_intc, INSTANCE: axi_intc_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 178 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: axi_bram_ctrl_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 191 
+WARNING:EDK:4092 - IPNAME: axi_bram_ctrl, INSTANCE: axi_bram_ctrl_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 198 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi4lite_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 215 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi4_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 223 
+WARNING:EDK:4092 - IPNAME: axi_uartlite, INSTANCE: RS232 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 230 
+WARNING:EDK:4092 - IPNAME: axi_emc, INSTANCE: Generic_External_Memory -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 245 
+WARNING:EDK:4092 - IPNAME: axi_ethernetlite, INSTANCE: Generic_Ethernet_10_100 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 282 
+WARNING:EDK:4092 - IPNAME: proc_sys_reset, INSTANCE: proc_sys_reset_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 34 
+WARNING:EDK:4092 - IPNAME: mii_to_rmii, INSTANCE: mii_to_rmii_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 47 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 68 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_i_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 75 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 84 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_d_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 91 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: microblaze_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 100 
+WARNING:EDK:4092 - IPNAME: microblaze, INSTANCE: microblaze_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 107 
+WARNING:EDK:4092 - IPNAME: mdm, INSTANCE: debug_module - Pre-Production version
+   not verified on hardware for architecture 'artix7' - I:\labz\wlan\system.mhs
+   line 136 
+WARNING:EDK:4092 - IPNAME: clock_generator, INSTANCE: clock_generator_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 149 
+WARNING:EDK:4092 - IPNAME: axi_timer, INSTANCE: axi_timer_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 168 
+WARNING:EDK:4092 - IPNAME: axi_intc, INSTANCE: axi_intc_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 178 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: axi_bram_ctrl_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 191 
+WARNING:EDK:4092 - IPNAME: axi_bram_ctrl, INSTANCE: axi_bram_ctrl_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 198 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi4lite_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 215 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi4_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 223 
+WARNING:EDK:4092 - IPNAME: axi_uartlite, INSTANCE: RS232 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 230 
+WARNING:EDK:4092 - IPNAME: axi_emc, INSTANCE: Generic_External_Memory -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 245 
+WARNING:EDK:4092 - IPNAME: axi_ethernetlite, INSTANCE: Generic_Ethernet_10_100 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 282 
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 2 master(s) : 6 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4_0 - 2 master(s) : 2 slave(s) 
+WARNING:EDK:3977 - axi4lite protocol type BUSIF: S_AXI_MEM of IPINSTANCE:
+   Generic_External_Memory  connected with AXI4 type BUSIF: M_AXI_DC of
+   IPINSTANCE: microblaze_0.
+WARNING:EDK:3977 - axi4lite protocol type BUSIF: S_AXI_MEM of IPINSTANCE:
+   Generic_External_Memory  connected with AXI4 type BUSIF: M_AXI_IC of
+   IPINSTANCE: microblaze_0.
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: Interrupt_address_in, CONNECTOR:
+   axi_intc_0_INTERRUPT_Interrupt_address_in - No driver found. Port will be
+   driven to GND -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_
+   v1_03_a\data\axi_intc_v2_1_0.mpd line 129 
+WARNING:EDK:4181 - PORT: Processor_ack_out, CONNECTOR:
+   axi_intc_0_INTERRUPT_Processor_ack_out - floating connection -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_
+   v1_03_a\data\axi_intc_v2_1_0.mpd line 130 
+WARNING:EDK:4181 - PORT: Mem_RPN, CONNECTOR: Generic_Memory_reset - floating
+   connection - I:\labz\wlan\system.mhs line 274 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4_0.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+INTC INFO:: Both AXI clock and processor clock have same connection.
+Port present in Generic_Ethernet_10_100
+Conversion to XML complete.

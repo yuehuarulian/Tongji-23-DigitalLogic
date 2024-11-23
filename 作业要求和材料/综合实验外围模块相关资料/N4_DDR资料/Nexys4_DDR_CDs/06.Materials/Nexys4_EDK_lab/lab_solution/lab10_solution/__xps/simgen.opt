@@ -1,0 +1,1 @@
+ -p artix7 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X E:/Project/N4/lab10/

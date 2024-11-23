@@ -1,0 +1,138 @@
+
+bitinit version Xilinx EDK 14.3 Build EDK_P.40xd
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File system.mhs...
+WARNING:EDK:4092 - IPNAME: proc_sys_reset, INSTANCE: proc_sys_reset_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 34 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 47 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_i_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 54 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 63 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_d_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 70 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: microblaze_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 79 
+WARNING:EDK:4092 - IPNAME: microblaze, INSTANCE: microblaze_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 86 
+WARNING:EDK:4092 - IPNAME: mdm, INSTANCE: debug_module - Pre-Production version
+   not verified on hardware for architecture 'artix7' - I:\labz\wlan\system.mhs
+   line 115 
+WARNING:EDK:4092 - IPNAME: clock_generator, INSTANCE: clock_generator_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 128 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: axi_bram_ctrl_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 145 
+WARNING:EDK:4092 - IPNAME: axi_bram_ctrl, INSTANCE: axi_bram_ctrl_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 152 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi4lite_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 169 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi4_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 177 
+WARNING:EDK:4092 - IPNAME: axi_uartlite, INSTANCE: RS232 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 184 
+WARNING:EDK:4092 - IPNAME: axi_emc, INSTANCE: Generic_External_Memory -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 199 
+WARNING:EDK:4092 - IPNAME: axi_ethernetlite, INSTANCE: Generic_Ethernet_10_100 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 234 
+WARNING:EDK:4092 - IPNAME: mii_to_rmii, INSTANCE: mii_to_rmii_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 255 
+WARNING:EDK:4092 - IPNAME: axi_intc, INSTANCE: axi_intc_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   I:\labz\wlan\system.mhs line 276 
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaz
+   e_v8_40_b\data\microblaze_v2_1_0.mpd line 196 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaz
+   e_v8_40_b\data\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaz
+   e_v8_40_b\data\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to artix7 -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_inter
+   connect_v1_06_a\data\axi_interconnect_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to artix7 -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_inter
+   connect_v1_06_a\data\axi_interconnect_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
+   PARAMETER C_NUM_INTR_INPUTS value to 0 -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_
+   v1_03_a\data\axi_intc_v2_1_0.mpd line 84 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x0000ffff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40600000-0x4060ffff) RS232	axi4lite_0
+  (0x40e00000-0x40e0ffff) Generic_Ethernet_10_100	axi4_0
+  (0x41200000-0x4120ffff) axi_intc_0	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x43000000-0x43ffffff) Generic_External_Memory	axi4_0
+  (0xa2000000-0xa2003fff) axi_bram_ctrl_0	axi4_0
+INFO:EDK:4087 - IPNAME: axi_ethernetlite, INSTANCE: Generic_Ethernet_10_100 -
+   This design requires design constraints to guarantee performance.
+   Please refer to the data sheet for details.  
+   The AXI clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation. - I:\labz\wlan\system.mhs line 234
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v
+   2_00_b\data\lmb_v10_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v
+   2_00_b\data\lmb_v10_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x10000 -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_bloc
+   k_v1_00_a\data\bram_block_v2_1_0.mpd line 77 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:axi_bram_ctrl_0_bram_block - tool
+   is overriding PARAMETER C_MEMSIZE value to 0x4000 -
+   I:\important\ISE14.3\14.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_bloc
+   k_v1_00_a\data\bram_block_v2_1_0.mpd line 77 
+
+Checking platform address map ...
+
+Initializing Memory...
+Running Data2Mem with the following command:
+data2mem -bm "implementation/system_bd" -p xc7a100tcsg324-3 -bt
+"implementation/system.bit"  -bd "bootloops/microblaze_0.elf" tag microblaze_0 
+-o b implementation/download.bit 
+Memory Initialization completed successfully.
+

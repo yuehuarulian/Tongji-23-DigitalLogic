@@ -1,0 +1,46 @@
+/*
+ * Copyright (c) 2009 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+/*
+ * helloworld.c: simple test application
+ */
+
+#include <stdio.h>
+#include "platform.h"
+#include "user_tool_vga.h"
+#include "user_menu.h"
+static int sin[64]={0x80,0x8c,0x98,0xa4,0xb0,0xbb,0xc6,0xd0,
+		 	 	 	0xd9,0xe2,0xe9,0xf0,0xf5,0xf9,0xfc,0xfe,
+		 	 	 	0xff,0xfe,0xfc,0xf9,0xf5,0xf0,0xe9,0xe2,
+		 	 	 	0xd9,0xd0,0xc6,0xbb,0xb0,0xa4,0x98,0x8c,
+		 	 	 	0x80,0x73,0x67,0x5b,0x4f,0x44,0x39,0x2f,
+		 	 	 	0x26,0x1d,0x16,0x0f,0x0a,0x06,0x03,0x01,
+		 	 	 	0x01,0x01,0x03,0x06,0x0a,0x0f,0x16,0x1d,
+		 	 	 	0x26,0x2f,0x39,0x44,0x4f,0x5b,0x67,0x73};
+void print(char *str);
+
+int main()
+{
+    init_platform();
+
+    Top_vga();
+
+    cleanup_platform();
+
+    return 0;
+}

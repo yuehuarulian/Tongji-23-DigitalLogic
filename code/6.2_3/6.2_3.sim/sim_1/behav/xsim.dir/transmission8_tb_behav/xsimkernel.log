@@ -1,0 +1,7 @@
+Running: xsim.dir/transmission8_tb_behav/xsimk.exe -simmode gui -wdb transmission8_tb_behav.wdb -simrunnum 0 -socket 61933
+Design successfully loaded
+Design Loading Memory Usage: 10048 KB (Peak: 10048 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 10692 KB (Peak: 10692 KB)
+Simulation CPU Usage: 31 ms

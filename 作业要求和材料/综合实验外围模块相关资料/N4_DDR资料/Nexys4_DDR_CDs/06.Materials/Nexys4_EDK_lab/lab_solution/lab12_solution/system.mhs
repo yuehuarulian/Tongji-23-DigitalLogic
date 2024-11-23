@@ -1,0 +1,155 @@
+
+# ##############################################################################
+# Created by Base System Builder Wizard for Xilinx EDK 14.3 Build EDK_P.40xd
+# Sun Dec 01 21:09:52 2013
+# Target Board:  Custom
+# Family:    artix7
+# Device:    xc7a100t
+# Package:   csg324
+# Speed Grade:  -3
+# ##############################################################################
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT RS232_Uart_1_sout = RS232_Uart_1_sout, DIR = O
+ PORT RS232_Uart_1_sin = RS232_Uart_1_sin, DIR = I
+ PORT RESET = RESET, DIR = I, SIGIS = RST, RST_POLARITY = 1
+ PORT clock_generator_0_CLKIN_pin = CLK, DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+ PORT audio_ip_0_pwm_out_pin = audio_ip_0_pwm_out, DIR = O
+ PORT audio_ip_0_pwm_sd_pin = audio_ip_0_pwm_sd, DIR = O
+
+
+BEGIN proc_sys_reset
+ PARAMETER INSTANCE = proc_sys_reset_0
+ PARAMETER HW_VER = 3.00.a
+ PARAMETER C_EXT_RESET_HIGH = 1
+ PORT MB_Debug_Sys_Rst = proc_sys_reset_0_MB_Debug_Sys_Rst
+ PORT Dcm_locked = proc_sys_reset_0_Dcm_locked
+ PORT MB_Reset = proc_sys_reset_0_MB_Reset
+ PORT Slowest_sync_clk = clk_100_0000MHz
+ PORT Interconnect_aresetn = proc_sys_reset_0_Interconnect_aresetn
+ PORT Ext_Reset_In = RESET
+ PORT BUS_STRUCT_RESET = proc_sys_reset_0_BUS_STRUCT_RESET
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = microblaze_0_ilmb
+ PARAMETER HW_VER = 2.00.b
+ PORT SYS_RST = proc_sys_reset_0_BUS_STRUCT_RESET
+ PORT LMB_CLK = clk_100_0000MHz
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = microblaze_0_i_bram_ctrl
+ PARAMETER HW_VER = 3.10.b
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x00001fff
+ BUS_INTERFACE SLMB = microblaze_0_ilmb
+ BUS_INTERFACE BRAM_PORT = microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = microblaze_0_dlmb
+ PARAMETER HW_VER = 2.00.b
+ PORT SYS_RST = proc_sys_reset_0_BUS_STRUCT_RESET
+ PORT LMB_CLK = clk_100_0000MHz
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = microblaze_0_d_bram_ctrl
+ PARAMETER HW_VER = 3.10.b
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x00001fff
+ BUS_INTERFACE SLMB = microblaze_0_dlmb
+ BUS_INTERFACE BRAM_PORT = microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = microblaze_0_bram_block
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block
+ BUS_INTERFACE PORTB = microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block
+END
+
+BEGIN microblaze
+ PARAMETER INSTANCE = microblaze_0
+ PARAMETER HW_VER = 8.40.b
+ PARAMETER C_INTERCONNECT = 2
+ PARAMETER C_USE_BARREL = 1
+ PARAMETER C_USE_FPU = 0
+ PARAMETER C_DEBUG_ENABLED = 1
+ PARAMETER C_ICACHE_BASEADDR = 0X00000000
+ PARAMETER C_ICACHE_HIGHADDR = 0X3FFFFFFF
+ PARAMETER C_USE_ICACHE = 0
+ PARAMETER C_ICACHE_ALWAYS_USED = 0
+ PARAMETER C_DCACHE_BASEADDR = 0X00000000
+ PARAMETER C_DCACHE_HIGHADDR = 0X3FFFFFFF
+ PARAMETER C_USE_DCACHE = 0
+ PARAMETER C_DCACHE_ALWAYS_USED = 0
+ BUS_INTERFACE ILMB = microblaze_0_ilmb
+ BUS_INTERFACE DLMB = microblaze_0_dlmb
+ BUS_INTERFACE M_AXI_DP = axi4lite_0
+ BUS_INTERFACE DEBUG = microblaze_0_debug
+ PORT MB_RESET = proc_sys_reset_0_MB_Reset
+ PORT CLK = clk_100_0000MHz
+END
+
+BEGIN mdm
+ PARAMETER INSTANCE = debug_module
+ PARAMETER HW_VER = 2.10.a
+ PARAMETER C_INTERCONNECT = 2
+ PARAMETER C_USE_UART = 1
+ PARAMETER C_BASEADDR = 0x41400000
+ PARAMETER C_HIGHADDR = 0x4140ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ BUS_INTERFACE MBDEBUG_0 = microblaze_0_debug
+ PORT Debug_SYS_Rst = proc_sys_reset_0_MB_Debug_Sys_Rst
+ PORT S_AXI_ACLK = clk_100_0000MHz
+END
+
+BEGIN clock_generator
+ PARAMETER INSTANCE = clock_generator_0
+ PARAMETER HW_VER = 4.03.a
+ PARAMETER C_CLKIN_FREQ = 100000000
+ PARAMETER C_CLKOUT0_FREQ = 100000000
+ PARAMETER C_CLKOUT0_GROUP = NONE
+ PORT LOCKED = proc_sys_reset_0_Dcm_locked
+ PORT CLKOUT0 = clk_100_0000MHz
+ PORT RST = RESET
+ PORT CLKIN = CLK
+END
+
+BEGIN axi_interconnect
+ PARAMETER INSTANCE = axi4lite_0
+ PARAMETER HW_VER = 1.06.a
+ PARAMETER C_INTERCONNECT_CONNECTIVITY_MODE = 0
+ PORT interconnect_aclk = clk_100_0000MHz
+ PORT INTERCONNECT_ARESETN = proc_sys_reset_0_Interconnect_aresetn
+END
+
+BEGIN axi_uartlite
+ PARAMETER INSTANCE = RS232
+ PARAMETER HW_VER = 1.02.a
+ PARAMETER C_BAUDRATE = 9600
+ PARAMETER C_DATA_BITS = 8
+ PARAMETER C_USE_PARITY = 0
+ PARAMETER C_ODD_PARITY = 1
+ PARAMETER C_BASEADDR = 0x40600000
+ PARAMETER C_HIGHADDR = 0x4060ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT TX = RS232_Uart_1_sout
+ PORT RX = RS232_Uart_1_sin
+END
+
+BEGIN audio_ip
+ PARAMETER INSTANCE = audio_ip_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x7e200000
+ PARAMETER C_HIGHADDR = 0x7e20ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT pwm_out = audio_ip_0_pwm_out
+ PORT pwm_sd = audio_ip_0_pwm_sd
+END
+

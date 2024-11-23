@@ -1,0 +1,30 @@
+
+###############################################################################
+##
+## Copyright (c) 2008 Xilinx, Inc.  All rights reserved.
+##
+## Xilinx, Inc.
+##
+## xps_ps2_v1_01_b.pao
+##
+## Peripheral Analyze Order File
+##
+##
+###############################################################################
+
+##------Proc Common Library Files----------
+lib proc_common_v3_00_a all
+
+##------- PLB IPIF Library Files ----------
+lib plbv46_slave_single_v1_01_a all
+
+##------- INTERRUPT CONTROL Library File --
+lib interrupt_control_v2_01_a all
+
+##-------PS2 Files -----------------------
+lib xps_ps2_v1_01_b ps2_counter.vhd vhdl
+lib xps_ps2_v1_01_b ps2_reg.vhd vhdl
+lib xps_ps2_v1_01_b ps2_sie.vhd vhdl
+lib xps_ps2_v1_01_b ps2.vhd vhdl
+lib xps_ps2_v1_01_b xps_ps2.vhd vhdl
+

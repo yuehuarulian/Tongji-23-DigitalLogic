@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<!--
+########################################################################
+##
+## Copyright(c) 2008 Xilinx, Inc.  All rights reserved.
+##
+########################################################################
+-->
+
+<!DOCTYPE doc SYSTEM "../../ipdialog.dtd" [
+	<!-- -->
+	<!ENTITY C_IS_DUAL '
+	<widget id="C_IS_DUAL">
+		<key>C_IS_DUAL</key>
+		<label>Enable Port 2 </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_IS_DUAL '
+	<widget id="C_SPLB_CLK_FREQ_HZ">
+		<key>C_SPLB_CLK_FREQ_HZ</key>
+		<label>Operating Clock Frequency </label>
+		<tip></tip>
+	</widget>
+	'>
+]>
+
+<doc>
+	<view id="User">
+		<display>User</display>
+		<group id="Common">
+			<display>Common</display>
+			<item>&C_IS_DUAL;</item>
+			<item>&C_SPLB_CLK_FREQ_HZ;</item>
+		</group>
+	</view>
+	<view id="System">
+		<display>System</display>
+		<group id="Addresses">
+			<display>Addresses</display>
+			<item>&C_BASEADDR;</item>
+			<item>&C_HIGHADDR;</item>
+		</group>
+		<group id="SPLB">
+			<display>PLB</display>
+			<item>&C_SPLB_NUM_MASTERS;</item>
+			<item>&C_SPLB_MID_WIDTH;</item>
+			<item>&C_SPLB_AWIDTH;</item>
+			<item>&C_SPLB_DWIDTH;</item>
+			<item>&C_SPLB_P2P;</item>
+			<item>&C_SPLB_SUPPORT_BURSTS;</item>
+			<item>&C_SPLB_NATIVE_DWIDTH;</item>
+		</group>
+		<group id="Hidden">
+			<display>Hidden</display>
+			<item>&C_FAMILY;</item>
+		</group>
+	</view>
+</doc>

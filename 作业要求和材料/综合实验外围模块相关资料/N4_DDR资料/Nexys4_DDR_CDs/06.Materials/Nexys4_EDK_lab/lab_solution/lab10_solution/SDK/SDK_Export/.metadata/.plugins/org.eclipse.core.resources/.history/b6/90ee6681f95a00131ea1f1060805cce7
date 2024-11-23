@@ -1,0 +1,162 @@
+/*
+ * user_tool_vga.h
+ *
+ *  Created on: 2013-12-2
+ *      Author: ForeverHyjal
+ */
+
+#ifndef USER_TOOL_VGA_H_
+#define USER_TOOL_VGA_H_
+
+void Tool_vga_q();
+void Tool_vga_sin(int f,int t,int h,int v);
+void Tool_vga_sin_q();
+void Tool_vga_free(int ho,int ve);
+void Tool_vga_free_q();
+int Tool_vga_xy_a();
+int Tool_vga_xy_b();
+void Tool_vga_xy_p(int a,int b);
+void Tool_vga_xy_q();
+int Tool_vga_pw_a();
+void Tool_vga_pw_p(int v);
+void Tool_vga_pw_q();
+
+
+void Tool_vga_q()
+{
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x0);
+}
+void Tool_vga_sin(int f,int t,int h,int v)
+{
+	int i;
+	int j;
+	for(i=0;i<640;i++)
+	{
+		IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x3);
+		IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG1_OFFSET,i);
+		IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG2_OFFSET,f*sin[((i+h)/t)%64]/4+v);
+		for(j=0;j<100;j++);
+	}
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x2);
+}
+
+void Tool_vga_sin_q()
+{
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x0);
+}
+
+void Tool_vga_free(int ho,int ve)
+{
+	int j;
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x3);
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG1_OFFSET,ho);
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG2_OFFSET,ve);
+	for(j=0;j<100;j++);
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x2);
+}
+
+void Tool_vga_free_q()
+{
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x0);
+}
+
+int Tool_vga_xy_a()
+{
+	int ch=-1;
+	int dig;
+	int a=0;
+	while(1)
+	{
+		while((ch=Choice())==-1);
+		if(ch=='#')
+			break;
+		if(ch<'0' || ch>'9')
+			continue;
+		dig=ch-'0';
+		a=a*10+dig;
+	}
+	return a;
+}
+
+int Tool_vga_xy_b()
+{
+	int ch=-1;
+	int dig;
+	int b=0;
+	while(1)
+	{
+		while((ch=Choice())==-1);
+		if(ch=='#')
+			break;
+		if(ch<'0' || ch>'9')
+			continue;
+		dig=ch-'0';
+		b=b*10+dig;
+	}
+	return b;
+}
+
+void Tool_vga_xy_p(int a,int b)
+{
+	int i;
+	int j;
+	for(i=0;i<640;i++)
+	{
+		IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x3);
+		IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG1_OFFSET,i);
+		IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG2_OFFSET,480-i*a+b);
+		for(j=0;j<100;j++);
+	}
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x2);
+}
+
+void Tool_vga_xy_q()
+{
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x0);
+}
+
+int Tool_vga_pw_a()
+{
+	int ch=-1;
+	int dig;
+	int v=0;
+	while(1)
+	{
+		while((ch=Choice())==-1);
+		if(ch=='#')
+			break;
+		if(ch<'0' || ch>'9')
+			continue;
+		dig=ch-'0';
+		v=v*10+dig;
+	}
+	return v;
+}
+void Tool_vga_pw_p(int v)
+{
+	int j;
+	int i;
+	int t=0;
+	int s=0;
+	while(1)
+	{
+		IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x3);
+		IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG1_OFFSET,s);
+		s=s+v;
+		IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG2_OFFSET,0.5*t*t);
+		for(j=0;j<100000;j++)
+			for(i=0;i<10;i++);
+		t=t+1;
+		if(s>=640 || 0.5*t*t>=480)
+			break;
+	}
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x2);
+}
+
+
+void Tool_vga_pw_q()
+{
+	IP_VGA_mWriteReg(XPAR_IP_VGA_0_BASEADDR,IP_VGA_SLV_REG0_OFFSET,0x0);
+}
+
+#endif /* USER_TOOL_VGA_H_ */

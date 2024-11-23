@@ -1,0 +1,9 @@
+elfcheck
+Xilinx EDK 14.3 Build EDK_P.40xd
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../lab12_hw_platform/system.xml -pe microblaze_0
+lab12.elf 
+
+ELF file	: lab12.elf
+elfcheck passed.

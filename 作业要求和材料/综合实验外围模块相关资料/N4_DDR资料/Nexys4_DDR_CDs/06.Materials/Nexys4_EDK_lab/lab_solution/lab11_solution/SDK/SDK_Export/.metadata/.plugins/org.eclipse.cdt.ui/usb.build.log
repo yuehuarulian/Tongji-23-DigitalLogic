@@ -1,0 +1,29 @@
+
+**** Build of configuration Debug for project usb ****
+
+make all 
+Building file: ../src/usb.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../usb_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.40.b -mno-xl-soft-mul -MMD -MP -MF"src/usb.d" -MT"src/usb.d" -o"src/usb.o" "../src/usb.c"
+../src/usb.c: In function 'Ps2PolledExample':
+../src/usb.c:110:6: warning: unused variable 'Delay' [-Wunused-variable]
+../src/usb.c:109:6: warning: variable 'BytesReceived' set but not used [-Wunused-but-set-variable]
+../src/usb.c:107:6: warning: unused variable 'BytesSent' [-Wunused-variable]
+Finished building: ../src/usb.c
+' '
+Building target: usb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../usb_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.40.b -mno-xl-soft-mul -o"usb.elf"  ./src/usb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../usb_bsp/microblaze_0/lib\libxil.a(xil_printf.o): In function `padding':
+/gnu/mb_gnu/src/newlib/libgloss/microblaze/xil_printf.c:50: undefined reference to `outbyte'
+../../usb_bsp/microblaze_0/lib\libxil.a(xil_printf.o): In function `outnum':
+/gnu/mb_gnu/src/newlib/libgloss/microblaze/xil_printf.c:112: undefined reference to `outbyte'
+../../usb_bsp/microblaze_0/lib\libxil.a(xil_printf.o): In function `xil_printf':
+/gnu/mb_gnu/src/newlib/libgloss/microblaze/xil_printf.c:168: undefined reference to `outbyte'
+../../usb_bsp/microblaze_0/lib\libxil.a(xil_printf.o): In function `outs':
+/gnu/mb_gnu/src/newlib/libgloss/microblaze/xil_printf.c:66: undefined reference to `outbyte'
+../../usb_bsp/microblaze_0/lib\libxil.a(xil_printf.o): In function `xil_printf':
+/gnu/mb_gnu/src/newlib/libgloss/microblaze/xil_printf.c:229: undefined reference to `outbyte'
+../../usb_bsp/microblaze_0/lib\libxil.a(xil_printf.o):/gnu/mb_gnu/src/newlib/libgloss/microblaze/xil_printf.c:238: more undefined references to `outbyte' follow
+collect2: ld returned 1 exit status
+make: *** [usb.elf] ´íÎó 1

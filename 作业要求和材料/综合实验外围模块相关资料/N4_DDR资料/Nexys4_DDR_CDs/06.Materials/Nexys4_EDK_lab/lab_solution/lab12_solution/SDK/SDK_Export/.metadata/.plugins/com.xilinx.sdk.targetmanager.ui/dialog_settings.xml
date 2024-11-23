@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Nexys4_lab\lab12\SDK\SDK_Export\lab12_hw_platform\system.bit" key="lab12_hw_platform-bitFile"/>
+	<item value="C:\Nexys4_lab\lab12\SDK\SDK_Export\lab12_hw_platform\system_bd.bmm" key="lab12_hw_platform-bmmFile"/>
+	<item value="D:\Nexys4_lab\lab12\SDK\SDK_Export\lab12\Debug\lab12.elf" key="lab12_hw_platform-microblaze_0-initElf"/>
+</section>

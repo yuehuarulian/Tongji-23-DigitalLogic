@@ -1,0 +1,275 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Oct 23 20:56:12 2023
+# Process ID: 11656
+# Current directory: E:/szlj/vivado_save/6.4/6.4.runs/synth_1
+# Command line: vivado.exe -log barrelshifter32.vds -mode batch -messageDb vivado.pb -notrace -source barrelshifter32.tcl
+# Log file: E:/szlj/vivado_save/6.4/6.4.runs/synth_1/barrelshifter32.vds
+# Journal file: E:/szlj/vivado_save/6.4/6.4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source barrelshifter32.tcl -notrace
+Command: synth_design -top barrelshifter32 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15688 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 305.074 ; gain = 98.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'barrelshifter32' [E:/szlj/vivado_save/6.4/6.4.srcs/sources_1/new/barrelshifter32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'barrelshifter32' (1#1) [E:/szlj/vivado_save/6.4/6.4.srcs/sources_1/new/barrelshifter32.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 341.477 ; gain = 134.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 341.477 ; gain = 134.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 341.477 ; gain = 134.457
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg' [E:/szlj/vivado_save/6.4/6.4.srcs/sources_1/new/barrelshifter32.v:34]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 349.215 ; gain = 142.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module barrelshifter32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 470.883 ; gain = 263.863
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 470.988 ; gain = 263.969
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 470.988 ; gain = 263.969
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (c_reg[31]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[30]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[29]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[28]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[27]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[26]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[25]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[24]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[23]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[22]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[21]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[20]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[19]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[18]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[17]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[16]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[15]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[14]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[13]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[12]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[11]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[10]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[9]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[8]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[7]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[6]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[5]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[4]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[3]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[2]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[1]) is unused and will be removed from module barrelshifter32.
+WARNING: [Synth 8-3332] Sequential element (c_reg[0]) is unused and will be removed from module barrelshifter32.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     1|
+|2     |LUT3  |    21|
+|3     |LUT4  |    15|
+|4     |LUT5  |    40|
+|5     |LUT6  |   105|
+|6     |MUXF7 |    14|
+|7     |IBUF  |    39|
+|8     |OBUF  |    32|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   267|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 498.465 ; gain = 271.488
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 498.465 ; gain = 291.445
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 557.695 ; gain = 333.285
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 557.695 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 23 20:56:21 2023...

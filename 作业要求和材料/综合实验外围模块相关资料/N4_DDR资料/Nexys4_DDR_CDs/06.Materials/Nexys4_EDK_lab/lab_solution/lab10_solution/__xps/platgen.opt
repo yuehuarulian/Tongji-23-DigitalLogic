@@ -1,0 +1,2 @@
+ -p xc7a100tcsg324-3 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst
+

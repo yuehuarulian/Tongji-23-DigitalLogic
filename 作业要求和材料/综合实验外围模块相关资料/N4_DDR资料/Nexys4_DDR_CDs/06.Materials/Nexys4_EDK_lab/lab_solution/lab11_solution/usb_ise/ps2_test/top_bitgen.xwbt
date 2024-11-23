@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\hc_work\New_product\Nexys4\ps2_test\top.ncd
+OUTFILE=D:\hc_work\New_product\Nexys4\ps2_test\top.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=D:\hc_work\New_product\Nexys4\ps2_test
+LICENSE=ISE
+USER_INFO=__123456789_123456_123456789

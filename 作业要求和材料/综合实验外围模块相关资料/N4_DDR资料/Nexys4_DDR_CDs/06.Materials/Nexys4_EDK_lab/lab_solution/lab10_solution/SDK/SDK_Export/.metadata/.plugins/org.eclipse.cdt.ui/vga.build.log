@@ -1,0 +1,63 @@
+
+**** Build of configuration Debug for project vga ****
+
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../vga_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.40.b -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o"src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:25:0:
+../src/user_tool_vga.h: In function 'Choice':
+../src/user_tool_vga.h:43:2: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+../src/user_tool_vga.h: In function 'Top_vga':
+../src/user_tool_vga.h:192:3: warning: implicit declaration of function 'Menu_vga' [-Wimplicit-function-declaration]
+../src/user_tool_vga.h: In function 'Top_vga_sin':
+../src/user_tool_vga.h:214:2: warning: implicit declaration of function 'Menu_vga_sin' [-Wimplicit-function-declaration]
+../src/user_tool_vga.h: In function 'Top_vga_free':
+../src/user_tool_vga.h:238:2: warning: implicit declaration of function 'Menu_vga_free' [-Wimplicit-function-declaration]
+../src/user_tool_vga.h: In function 'Top_vga_xy':
+../src/user_tool_vga.h:264:3: warning: implicit declaration of function 'Menu_vga_xy' [-Wimplicit-function-declaration]
+../src/user_tool_vga.h: In function 'Top_vga_pw':
+../src/user_tool_vga.h:283:3: warning: implicit declaration of function 'Menu_vga_pw' [-Wimplicit-function-declaration]
+In file included from ../src/helloworld.c:26:0:
+../src/user_menu.h: At top level:
+../src/user_menu.h:13:6: warning: conflicting types for 'Menu_vga' [enabled by default]
+../src/user_tool_vga.h:192:3: note: previous implicit declaration of 'Menu_vga' was here
+../src/user_menu.h:15:6: warning: conflicting types for 'Menu_vga_free' [enabled by default]
+../src/user_tool_vga.h:238:2: note: previous implicit declaration of 'Menu_vga_free' was here
+../src/user_menu.h:16:6: warning: conflicting types for 'Menu_vga_xy' [enabled by default]
+../src/user_tool_vga.h:264:3: note: previous implicit declaration of 'Menu_vga_xy' was here
+../src/user_menu.h:17:6: warning: conflicting types for 'Menu_vga_pw' [enabled by default]
+../src/user_tool_vga.h:283:3: note: previous implicit declaration of 'Menu_vga_pw' was here
+../src/user_menu.h:31:6: warning: conflicting types for 'Menu_vga_sin' [enabled by default]
+../src/user_tool_vga.h:214:2: note: previous implicit declaration of 'Menu_vga_sin' was here
+Finished building: ../src/helloworld.c
+' '
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../vga_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.40.b -mno-xl-soft-mul -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o"src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+' '
+Building target: vga.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../vga_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.40.b -mno-xl-soft-mul -o"vga.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size vga.elf  |tee "vga.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13142	    548	   2088	  15778	   3da2	vga.elf
+Finished building: vga.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck vga.elf -hw ../../lab10_hw_platform/system.xml -pe microblaze_0  |tee "vga.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.3 Build EDK_P.40xd
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../lab10_hw_platform/system.xml -pe microblaze_0
+vga.elf 
+
+ELF file	: vga.elf
+elfcheck passed.
+Finished building: vga.elf.elfcheck
+' '

@@ -1,0 +1,596 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Jan 11 00:22:46 2024
+# Process ID: 24032
+# Current directory: E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1
+# Command line: vivado.exe -log GAME_TOP.vds -mode batch -messageDb vivado.pb -notrace -source GAME_TOP.tcl
+# Log file: E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/GAME_TOP.vds
+# Journal file: E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source GAME_TOP.tcl -notrace
+Command: synth_design -top GAME_TOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16072 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 306.344 ; gain = 99.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'GAME_TOP' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/bigwork_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'Divider' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/Divider.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Divider' (2#1) [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/Divider.v:24]
+INFO: [Synth 8-638] synthesizing module 'VGA' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/VGA.v:22]
+	Parameter HS_SYNC bound to: 136 - type: integer 
+	Parameter HS_BACK bound to: 160 - type: integer 
+	Parameter HS_ACTIVE bound to: 1024 - type: integer 
+	Parameter HS_FRONT bound to: 24 - type: integer 
+	Parameter VS_SYNC bound to: 6 - type: integer 
+	Parameter VS_BACK bound to: 29 - type: integer 
+	Parameter VS_ACTIVE bound to: 768 - type: integer 
+	Parameter VS_FRONT bound to: 3 - type: integer 
+	Parameter COL bound to: 1344 - type: integer 
+	Parameter ROW bound to: 806 - type: integer 
+	Parameter FRAM bound to: 60 - type: integer 
+	Parameter Tetris_Size bound to: 38 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'tetris_control' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/tetris_control.v:23]
+	Parameter TTS0_4 bound to: 20'b00000000000000000011 
+	Parameter TTS0_5 bound to: 20'b00000000000000000001 
+	Parameter TTS0_6 bound to: 20'b00000000000000000001 
+	Parameter TTS1_4 bound to: 20'b00000000000000000000 
+	Parameter TTS1_5 bound to: 20'b00000000000000000011 
+	Parameter TTS1_6 bound to: 20'b00000000000000000011 
+	Parameter TTS2_4 bound to: 20'b00000000000000000000 
+	Parameter TTS2_5 bound to: 20'b00000000000000001111 
+	Parameter TTS2_6 bound to: 20'b00000000000000000000 
+	Parameter TTS3_4 bound to: 20'b00000000000000000000 
+	Parameter TTS3_5 bound to: 20'b00000000000000000100 
+	Parameter TTS3_6 bound to: 20'b00000000000000000111 
+	Parameter TTS4_4 bound to: 20'b00000000000000000001 
+	Parameter TTS4_5 bound to: 20'b00000000000000000011 
+	Parameter TTS4_6 bound to: 20'b00000000000000000001 
+	Parameter TTS5_4 bound to: 20'b00000000000000000000 
+	Parameter TTS5_5 bound to: 20'b00000000000000000011 
+	Parameter TTS5_6 bound to: 20'b00000000000000000110 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/tetris_control.v:419]
+INFO: [Synth 8-256] done synthesizing module 'tetris_control' (3#1) [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/tetris_control.v:23]
+WARNING: [Synth 8-689] width (33) of port connection 'score' does not match port width (32) of module 'tetris_control' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/VGA.v:115]
+INFO: [Synth 8-4471] merging register 'color_b_reg[3:0]' into 'color_g_reg[3:0]' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/VGA.v:73]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (4#1) [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/VGA.v:22]
+WARNING: [Synth 8-689] width (32) of port connection 'score' does not match port width (33) of module 'VGA' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/bigwork_top.v:88]
+INFO: [Synth 8-638] synthesizing module 'MP3' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:23]
+	Parameter H_RESET bound to: 4'b0000 
+	Parameter S_RESET bound to: 4'b0001 
+	Parameter SET_CLOCKF bound to: 4'b0010 
+	Parameter SET_BASS bound to: 4'b0011 
+	Parameter SET_VOL bound to: 4'b0011 
+	Parameter WAITE bound to: 4'b0101 
+	Parameter PLAY bound to: 4'b0110 
+	Parameter END bound to: 6'b000111 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (5#1) [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_0' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:243]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (6#1) [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_1' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:248]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (7#1) [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/blk_mem_gen_2_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (14) of module 'blk_mem_gen_2' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:253]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/blk_mem_gen_3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_3' (8#1) [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/blk_mem_gen_3_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_3' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:258]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_4' [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/blk_mem_gen_4_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_4' (9#1) [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/realtime/blk_mem_gen_4_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_4' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:263]
+INFO: [Synth 8-256] done synthesizing module 'MP3' (10#1) [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:23]
+INFO: [Synth 8-638] synthesizing module 'display_score' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/display_score.v:97]
+INFO: [Synth 8-638] synthesizing module 'Bin2BCD' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/display_score.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Bin2BCD' (11#1) [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/display_score.v:24]
+INFO: [Synth 8-256] done synthesizing module 'display_score' (12#1) [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/display_score.v:97]
+INFO: [Synth 8-256] done synthesizing module 'GAME_TOP' (13#1) [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/bigwork_top.v:23]
+WARNING: [Synth 8-3331] design MP3 has unconnected port SO
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 372.469 ; gain = 165.129
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 372.469 ; gain = 165.129
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'uut_mp3/id_0_wings_of_piano' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:241]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_1' instantiated as 'uut_mp3/id_1_PaperPlane' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:246]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_2' instantiated as 'uut_mp3/id_2_Pure_32' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:251]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_3' instantiated as 'uut_mp3/id_3_lady' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:256]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_4' instantiated as 'uut_mp3/id_4_Tempestissimo' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/MP3.v:261]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'uut' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/bigwork_top.v:61]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp/blk_mem_gen_0_in_context.xdc] for cell 'uut_mp3/id_0_wings_of_piano'
+Finished Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp/blk_mem_gen_0_in_context.xdc] for cell 'uut_mp3/id_0_wings_of_piano'
+Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_2/clk_wiz_0_in_context.xdc] for cell 'uut'
+Finished Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_2/clk_wiz_0_in_context.xdc] for cell 'uut'
+Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_3/blk_mem_gen_1_in_context.xdc] for cell 'uut_mp3/id_1_PaperPlane'
+Finished Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_3/blk_mem_gen_1_in_context.xdc] for cell 'uut_mp3/id_1_PaperPlane'
+Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_4/blk_mem_gen_2_in_context.xdc] for cell 'uut_mp3/id_2_Pure_32'
+Finished Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_4/blk_mem_gen_2_in_context.xdc] for cell 'uut_mp3/id_2_Pure_32'
+Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_5/blk_mem_gen_3_in_context.xdc] for cell 'uut_mp3/id_3_lady'
+Finished Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_5/blk_mem_gen_3_in_context.xdc] for cell 'uut_mp3/id_3_lady'
+Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_6/blk_mem_gen_4_in_context.xdc] for cell 'uut_mp3/id_4_Tempestissimo'
+Finished Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_6/blk_mem_gen_4_in_context.xdc] for cell 'uut_mp3/id_4_Tempestissimo'
+Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.srcs/constrs_1/new/bigwork_top.xdc]
+Finished Parsing XDC File [E:/szlj/vivado_save/bigwork/bigwork.srcs/constrs_1/new/bigwork_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/szlj/vivado_save/bigwork/bigwork.srcs/constrs_1/new/bigwork_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/GAME_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/GAME_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 688.945 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 688.945 ; gain = 481.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 688.945 ; gain = 481.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100. (constraint file  E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_2/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100. (constraint file  E:/szlj/vivado_save/bigwork/bigwork.runs/synth_1/.Xil/Vivado-24032-DELL/dcp_2/clk_wiz_0_in_context.xdc, line 5).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 688.945 ; gain = 481.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "tetris_new" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tetris_new" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "i" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "j" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "f_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk1s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "XDCS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ena" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SI" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "addra" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cntSended" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cntSended" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "music_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mp3Speed" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 688.945 ; gain = 481.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |tetris_control__GB0 |           1|     53573|
+|2     |tetris_control__GB1 |           1|     10302|
+|3     |VGA__GC0            |           1|      4356|
+|4     |GAME_TOP__GC0       |           1|      5851|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  15 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 14    
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 13    
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 165   
++---Registers : 
+	              200 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input    200 Bit        Muxes := 40    
+	   2 Input    123 Bit        Muxes := 1     
+	   7 Input    123 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 2     
+	   6 Input     21 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 156   
+	   5 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 36    
+	   5 Input      1 Bit        Muxes := 15    
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tetris_control 
+Detailed RTL Component Info : 
++---Adders : 
+	  15 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 9     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 12    
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	              200 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    200 Bit        Muxes := 40    
+	   2 Input    123 Bit        Muxes := 1     
+	   7 Input    123 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   5 Input      4 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module VGA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 5     
++---Registers : 
+	               12 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module MP3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 2     
+	   6 Input     21 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   5 Input      1 Bit        Muxes := 15    
+	   6 Input      1 Bit        Muxes := 1     
+Module Bin2BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 164   
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 148   
+Module display_score 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 688.945 ; gain = 481.605
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'randn_reg[15:0]' into 'randn_reg[15:0]' [E:/szlj/vivado_save/bigwork/bigwork.srcs/sources_1/new/tetris_control.v:419]
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "f_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk1s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "uut_mp3/XDCS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "uut_mp3/ena" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "uut_mp3/SI" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "uut_mp3/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "uut_mp3/cntSended" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "uut_mp3/cntSended" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "uut_mp3/addra" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 688.945 ; gain = 481.605
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 688.945 ; gain = 481.605
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |tetris_control__GB0 |           1|     58003|
+|2     |tetris_control__GB1 |           1|     10907|
+|3     |VGA__GC0            |           1|     15046|
+|4     |GAME_TOP__GC0       |           1|      7144|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uut_tetrisi_1/\score_reg[0] )
+INFO: [Synth 8-3886] merging instance 'uut_vgai_2/color_g_reg[1]' (FD) to 'uut_vgai_2/color_g_reg[3]'
+INFO: [Synth 8-3886] merging instance 'uut_vgai_2/color_r_reg[0]' (FDS) to 'uut_vgai_2/color_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'uut_vgai_2/color_r_reg[2]' (FDS) to 'uut_vgai_2/color_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[31]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[30]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[29]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[28]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[27]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[26]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[26]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[24]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[24]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[23]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[22]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[22]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[21]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[20]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[18]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[18]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[15]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[14]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[13]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[11]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[10]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[9]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[8]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[7]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[6]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[5]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[4]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[3]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut_mp3/cmd_reg[1]' (FDE_1) to 'i_3/uut_mp3/cmd_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\uut_mp3/cmd_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\uut_mp3/state_reg[3] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:02:04 . Memory (MB): peak = 1162.438 ; gain = 955.098
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:54 ; elapsed = 00:02:04 . Memory (MB): peak = 1162.438 ; gain = 955.098
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |tetris_control__GB0 |           1|     37000|
+|2     |tetris_control__GB1 |           1|      7275|
+|3     |VGA__GC0            |           1|      4499|
+|4     |GAME_TOP__GC0       |           1|      2915|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'uut/clk_out1' to pin 'uut/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'uut/clk_out2' to pin 'uut/bbstub_clk_out2/O'
+INFO: [Synth 8-5820] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:02:10 . Memory (MB): peak = 1162.438 ; gain = 955.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:02:31 . Memory (MB): peak = 1248.730 ; gain = 1041.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |tetris_control__GB0 |           1|     36920|
+|2     |tetris_control__GB1 |           1|      7275|
+|3     |VGA__GC0            |           1|      4418|
+|4     |GAME_TOP__GC0       |           1|      2915|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:02:40 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:10 ; elapsed = 00:02:40 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:10 ; elapsed = 00:02:40 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:02:43 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:02:43 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:02:44 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:02:44 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:02:45 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:02:45 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_0 |         1|
+|3     |blk_mem_gen_1 |         1|
+|4     |blk_mem_gen_2 |         1|
+|5     |blk_mem_gen_3 |         1|
+|6     |blk_mem_gen_4 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |blk_mem_gen_2 |     1|
+|4     |blk_mem_gen_3 |     1|
+|5     |blk_mem_gen_4 |     1|
+|6     |clk_wiz_0     |     1|
+|7     |BUFG          |     2|
+|8     |CARRY4        |   341|
+|9     |LUT1          |   403|
+|10    |LUT2          |  1016|
+|11    |LUT3          |  1299|
+|12    |LUT4          |  1569|
+|13    |LUT5          |  4318|
+|14    |LUT6          |  8652|
+|15    |MUXF7         |    68|
+|16    |MUXF8         |     3|
+|17    |XORCY         |     1|
+|18    |FDCE          |    24|
+|19    |FDRE          |   673|
+|20    |FDSE          |    14|
+|21    |IBUF          |    11|
+|22    |OBUF          |    34|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------------+---------------+------+
+|      |Instance       |Module         |Cells |
++------+---------------+---------------+------+
+|1     |top            |               | 18591|
+|2     |  uut_divider  |Divider        |   198|
+|3     |  uut_mp3      |MP3            |   594|
+|4     |  uut_score    |display_score  |    33|
+|5     |  uut_vga      |VGA            | 16966|
+|6     |    uut_tetris |tetris_control | 15826|
++------+---------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:02:45 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:02:39 . Memory (MB): peak = 1336.887 ; gain = 784.684
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:02:46 . Memory (MB): peak = 1336.887 ; gain = 1129.547
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 353 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'GAME_TOP' is not ideal for floorplanning, since the cellview 'tetris_control' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 135 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:02:46 . Memory (MB): peak = 1336.887 ; gain = 1105.664
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1336.887 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 11 00:25:36 2024...

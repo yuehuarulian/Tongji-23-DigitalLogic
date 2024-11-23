@@ -1,0 +1,13 @@
+##############################################################################
+## Filename:          D:/Nexys4_lab/lab/pcores/audio_ip_v1_00_a/data/audio_ip_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Dec 01 22:01:49 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib audio_ip_v1_00_a user_logic vhdl
+lib audio_ip_v1_00_a audio_ip vhdl
+lib audio_ip_v1_00_a top vhdl
+lib audio_ip_v1_00_a SimpleSynth vhdl
+lib audio_ip_v1_00_a PWM vhdl

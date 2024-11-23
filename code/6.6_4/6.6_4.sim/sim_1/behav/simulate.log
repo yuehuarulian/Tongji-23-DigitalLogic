@@ -1,0 +1,122 @@
+# do {pcreg_tb_simulate.do}
+# vsim -voptargs=""+acc"" -L unisims_ver -L unimacro_ver -L secureip -L xil_defaultlib -lib xil_defaultlib xil_defaultlib.pcreg_tb xil_defaultlib.glbl 
+# Start time: 21:09:03 on Nov 06,2023
+# //  ModelSim PE 10.4c Jul 20 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading xil_defaultlib.pcreg_tb
+# Loading xil_defaultlib.pcreg
+# Loading xil_defaultlib.D_FF
+# Loading xil_defaultlib.glbl
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(57): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff0 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(57): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(58): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff1 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(58): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(59): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff2 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(59): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(60): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff3 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(60): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(61): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff4 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(61): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(62): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff5 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(62): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(63): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff6 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(63): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(64): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff7 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(64): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(65): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff8 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(65): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(66): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff9 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(66): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(67): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff10 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(67): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(68): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff11 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(68): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(69): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff12 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(69): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(70): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff13 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(70): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(71): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff14 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(71): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(72): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff15 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(72): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(73): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff16 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(73): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(74): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff17 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(74): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(75): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff18 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(75): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(76): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff19 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(76): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(77): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff20 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(77): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(78): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff21 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(78): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(79): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff22 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(79): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(80): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff23 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(80): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(81): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff24 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(81): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(82): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff25 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(82): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(83): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff26 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(83): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(84): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff27 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(84): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(85): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff28 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(85): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(86): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff29 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(86): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(87): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff30 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(87): [TFMPC] - Missing connection for port 'Q2'.
+# ** Warning: (vsim-3017) ../../../6.6_4.srcs/sources_1/new/pcreg.v(88): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pcreg_tb/pc/dff31 File: ../../../6.6_4.srcs/sources_1/new/pcreg.v
+# ** Warning: (vsim-3722) ../../../6.6_4.srcs/sources_1/new/pcreg.v(88): [TFMPC] - Missing connection for port 'Q2'.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 21:10:47 on Nov 06,2023, Elapsed time: 0:01:44
+# Errors: 0, Warnings: 64

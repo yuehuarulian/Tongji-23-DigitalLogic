@@ -1,0 +1,303 @@
+
+# ##############################################################################
+# Created by Base System Builder Wizard for Xilinx EDK 14.3 Build EDK_P.40xd
+# Fri Nov 29 12:26:48 2013
+# Target Board:  Custom
+# Family:    artix7
+# Device:    xc7a100t
+# Package:   csg324
+# Speed Grade:  -3
+# ##############################################################################
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT RS232_Uart_1_sout = RS232_Uart_1_sout, DIR = O
+ PORT RS232_Uart_1_sin = RS232_Uart_1_sin, DIR = I
+ PORT RESET = RESET, DIR = I, SIGIS = RST, RST_POLARITY = 1
+ PORT Generic_Memory_we_n = Generic_Memory_we_n, DIR = O
+ PORT Generic_Memory_oe_n = Generic_Memory_oe_n, DIR = O
+ PORT Generic_Memory_data = Generic_Memory_data, DIR = IO, VEC = [15:0]
+ PORT Generic_Memory_ce_n = Generic_Memory_ce_n, DIR = O
+ PORT Generic_Memory_address = Generic_Memory_address, DIR = O, VEC = [0:22]
+ PORT clock_generator_0_CLKIN_pin = CLK, DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+ PORT Generic_External_Memory_Mem_BEN_pin = Generic_External_Memory_Mem_BEN, DIR = O, VEC = [1:0]
+ PORT clock_generator_0_CLKOUT2_pin = clock_generator_0_CLKOUT2, DIR = O, SIGIS = CLK, CLK_FREQ = 50000000
+ PORT mii_to_rmii_0_Phy2Rmii_crs_dv_pin = mii_to_rmii_0_Phy2Rmii_crs_dv, DIR = I
+ PORT mii_to_rmii_0_Phy2Rmii_rxd_pin = mii_to_rmii_0_Phy2Rmii_rxd, DIR = I, VEC = [1:0]
+ PORT mii_to_rmii_0_Phy2Rmii_rx_er_pin = mii_to_rmii_0_Phy2Rmii_rx_er, DIR = I
+ PORT mii_to_rmii_0_Rmii2Phy_txd_pin = mii_to_rmii_0_Rmii2Phy_txd, DIR = O, VEC = [1:0]
+ PORT mii_to_rmii_0_Rmii2Phy_tx_en_pin = mii_to_rmii_0_Rmii2Phy_tx_en, DIR = O
+ PORT Generic_Ethernet_10_100_PHY_MDIO = Generic_Ethernet_10_100_PHY_MDIO, DIR = IO
+ PORT Generic_Ethernet_10_100_PHY_MDC_pin = Generic_Ethernet_10_100_PHY_MDC, DIR = O
+
+
+BEGIN proc_sys_reset
+ PARAMETER INSTANCE = proc_sys_reset_0
+ PARAMETER HW_VER = 3.00.a
+ PARAMETER C_EXT_RESET_HIGH = 1
+ PORT MB_Debug_Sys_Rst = proc_sys_reset_0_MB_Debug_Sys_Rst
+ PORT Dcm_locked = proc_sys_reset_0_Dcm_locked
+ PORT MB_Reset = proc_sys_reset_0_MB_Reset
+ PORT Slowest_sync_clk = clk_100_0000MHz
+ PORT Interconnect_aresetn = proc_sys_reset_0_Interconnect_aresetn
+ PORT Ext_Reset_In = RESET
+ PORT BUS_STRUCT_RESET = proc_sys_reset_0_BUS_STRUCT_RESET
+END
+
+BEGIN mii_to_rmii
+ PARAMETER INSTANCE = mii_to_rmii_0
+ PARAMETER HW_VER = 1.01.a
+ PORT Mac2Rmii_tx_en = Generic_Ethernet_10_100_PHY_tx_en
+ PORT Rmii2Mac_tx_clk = Generic_Ethernet_10_100_PHY_tx_clk
+ PORT Mac2Rmii_txd = Generic_Ethernet_10_100_PHY_tx_data
+ PORT Rmii2Mac_rx_er = Generic_Ethernet_10_100_PHY_rx_er
+ PORT Rmii2Mac_rx_dv = Generic_Ethernet_10_100_PHY_dv
+ PORT Rmii2Mac_rx_clk = Generic_Ethernet_10_100_PHY_rx_clk
+ PORT Phy2Rmii_crs_dv = mii_to_rmii_0_Phy2Rmii_crs_dv
+ PORT Phy2Rmii_rxd = mii_to_rmii_0_Phy2Rmii_rxd
+ PORT Rmii2Mac_rxd = Generic_Ethernet_10_100_PHY_rx_data
+ PORT Phy2Rmii_rx_er = mii_to_rmii_0_Phy2Rmii_rx_er
+ PORT Ref_Clk = clock_generator_0_CLKOUT1
+ PORT Rst_n = Generic_Ethernet_10_100_PHY_rst_n
+ PORT Rmii2Mac_col = mii_to_rmii_0_Rmii2Mac_col
+ PORT Rmii2Mac_crs = mii_to_rmii_0_Rmii2Mac_crs
+ PORT Rmii2Phy_txd = mii_to_rmii_0_Rmii2Phy_txd
+ PORT Rmii2Phy_tx_en = mii_to_rmii_0_Rmii2Phy_tx_en
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = microblaze_0_ilmb
+ PARAMETER HW_VER = 2.00.b
+ PORT SYS_RST = proc_sys_reset_0_BUS_STRUCT_RESET
+ PORT LMB_CLK = clk_100_0000MHz
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = microblaze_0_i_bram_ctrl
+ PARAMETER HW_VER = 3.10.b
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x0000ffff
+ BUS_INTERFACE SLMB = microblaze_0_ilmb
+ BUS_INTERFACE BRAM_PORT = microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = microblaze_0_dlmb
+ PARAMETER HW_VER = 2.00.b
+ PORT SYS_RST = proc_sys_reset_0_BUS_STRUCT_RESET
+ PORT LMB_CLK = clk_100_0000MHz
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = microblaze_0_d_bram_ctrl
+ PARAMETER HW_VER = 3.10.b
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x0000ffff
+ BUS_INTERFACE SLMB = microblaze_0_dlmb
+ BUS_INTERFACE BRAM_PORT = microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = microblaze_0_bram_block
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block
+ BUS_INTERFACE PORTB = microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block
+END
+
+BEGIN microblaze
+ PARAMETER INSTANCE = microblaze_0
+ PARAMETER HW_VER = 8.40.b
+ PARAMETER C_INTERCONNECT = 2
+ PARAMETER C_USE_BARREL = 1
+ PARAMETER C_USE_FPU = 0
+ PARAMETER C_DEBUG_ENABLED = 1
+ PARAMETER C_ICACHE_BASEADDR = 0xbe000000
+ PARAMETER C_ICACHE_HIGHADDR = 0xbfffffff
+ PARAMETER C_USE_ICACHE = 1
+ PARAMETER C_CACHE_BYTE_SIZE = 8192
+ PARAMETER C_ICACHE_ALWAYS_USED = 1
+ PARAMETER C_DCACHE_BASEADDR = 0xbe000000
+ PARAMETER C_DCACHE_HIGHADDR = 0xbfffffff
+ PARAMETER C_USE_DCACHE = 1
+ PARAMETER C_DCACHE_BYTE_SIZE = 8192
+ PARAMETER C_DCACHE_ALWAYS_USED = 1
+ BUS_INTERFACE ILMB = microblaze_0_ilmb
+ BUS_INTERFACE DLMB = microblaze_0_dlmb
+ BUS_INTERFACE M_AXI_DP = axi4lite_0
+ BUS_INTERFACE M_AXI_IP = axi4lite_0
+ BUS_INTERFACE M_AXI_DC = axi4_0
+ BUS_INTERFACE M_AXI_IC = axi4_0
+ BUS_INTERFACE DEBUG = microblaze_0_debug
+ BUS_INTERFACE INTERRUPT = axi_intc_0_INTERRUPT
+ PORT MB_RESET = proc_sys_reset_0_MB_Reset
+ PORT CLK = clk_100_0000MHz
+END
+
+BEGIN mdm
+ PARAMETER INSTANCE = debug_module
+ PARAMETER HW_VER = 2.10.a
+ PARAMETER C_INTERCONNECT = 2
+ PARAMETER C_USE_UART = 1
+ PARAMETER C_BASEADDR = 0x41400000
+ PARAMETER C_HIGHADDR = 0x4140ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ BUS_INTERFACE MBDEBUG_0 = microblaze_0_debug
+ PORT Debug_SYS_Rst = proc_sys_reset_0_MB_Debug_Sys_Rst
+ PORT S_AXI_ACLK = clk_100_0000MHz
+END
+
+BEGIN clock_generator
+ PARAMETER INSTANCE = clock_generator_0
+ PARAMETER HW_VER = 4.03.a
+ PARAMETER C_CLKIN_FREQ = 100000000
+ PARAMETER C_CLKOUT0_FREQ = 100000000
+ PARAMETER C_CLKOUT0_GROUP = NONE
+ PARAMETER C_CLKOUT1_FREQ = 50000000
+ PARAMETER C_CLKOUT2_FREQ = 50000000
+ PARAMETER C_CLKOUT2_PHASE = 45
+ PARAMETER C_CLKOUT1_GROUP = MMCM0
+ PARAMETER C_CLKOUT2_GROUP = MMCM0
+ PORT LOCKED = proc_sys_reset_0_Dcm_locked
+ PORT CLKOUT0 = clk_100_0000MHz
+ PORT RST = RESET
+ PORT CLKIN = CLK
+ PORT CLKOUT2 = clock_generator_0_CLKOUT2
+ PORT CLKOUT1 = clock_generator_0_CLKOUT1
+END
+
+BEGIN axi_timer
+ PARAMETER INSTANCE = axi_timer_0
+ PARAMETER HW_VER = 1.03.a
+ PARAMETER C_BASEADDR = 0x41c00000
+ PARAMETER C_HIGHADDR = 0x41c0ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT Interrupt = axi_timer_0_Interrupt
+END
+
+BEGIN axi_intc
+ PARAMETER INSTANCE = axi_intc_0
+ PARAMETER HW_VER = 1.03.a
+ PARAMETER C_BASEADDR = 0x41200000
+ PARAMETER C_HIGHADDR = 0x4120ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ BUS_INTERFACE INTERRUPT = axi_intc_0_INTERRUPT
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT Intr = axi_timer_0_Interrupt & Generic_Ethernet_10_100_IP2INTC_Irpt
+ PORT Processor_clk = clk_100_0000MHz
+ PORT Processor_rst = proc_sys_reset_0_MB_Reset
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = axi_bram_ctrl_0_bram_block
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = axi_bram_ctrl_0_bram_porta_2_axi_bram_ctrl_0_bram_block_porta
+ BUS_INTERFACE PORTB = axi_bram_ctrl_0_bram_portb_2_axi_bram_ctrl_0_bram_block_portb
+END
+
+BEGIN axi_bram_ctrl
+ PARAMETER INSTANCE = axi_bram_ctrl_0
+ PARAMETER HW_VER = 1.03.a
+ PARAMETER C_INTERCONNECT_S_AXI_MASTERS = microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC
+ PARAMETER C_INTERCONNECT_S_AXI_AW_REGISTER = 8
+ PARAMETER C_INTERCONNECT_S_AXI_AR_REGISTER = 8
+ PARAMETER C_INTERCONNECT_S_AXI_W_REGISTER = 8
+ PARAMETER C_INTERCONNECT_S_AXI_R_REGISTER = 8
+ PARAMETER C_INTERCONNECT_S_AXI_B_REGISTER = 8
+ PARAMETER C_S_AXI_BASEADDR = 0xbe800000
+ PARAMETER C_S_AXI_HIGHADDR = 0xbe803fff
+ BUS_INTERFACE BRAM_PORTA = axi_bram_ctrl_0_bram_porta_2_axi_bram_ctrl_0_bram_block_porta
+ BUS_INTERFACE BRAM_PORTB = axi_bram_ctrl_0_bram_portb_2_axi_bram_ctrl_0_bram_block_portb
+ BUS_INTERFACE S_AXI = axi4_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+END
+
+BEGIN axi_interconnect
+ PARAMETER INSTANCE = axi4lite_0
+ PARAMETER HW_VER = 1.06.a
+ PARAMETER C_INTERCONNECT_CONNECTIVITY_MODE = 0
+ PORT INTERCONNECT_ARESETN = proc_sys_reset_0_Interconnect_aresetn
+ PORT INTERCONNECT_ACLK = clk_100_0000MHz
+END
+
+BEGIN axi_interconnect
+ PARAMETER INSTANCE = axi4_0
+ PARAMETER HW_VER = 1.06.a
+ PORT interconnect_aclk = clk_100_0000MHz
+ PORT INTERCONNECT_ARESETN = proc_sys_reset_0_Interconnect_aresetn
+END
+
+BEGIN axi_uartlite
+ PARAMETER INSTANCE = RS232
+ PARAMETER HW_VER = 1.02.a
+ PARAMETER C_BAUDRATE = 115200
+ PARAMETER C_DATA_BITS = 8
+ PARAMETER C_USE_PARITY = 0
+ PARAMETER C_ODD_PARITY = 1
+ PARAMETER C_BASEADDR = 0x40600000
+ PARAMETER C_HIGHADDR = 0x4060ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT TX = RS232_Uart_1_sout
+ PORT RX = RS232_Uart_1_sin
+END
+
+BEGIN axi_emc
+ PARAMETER INSTANCE = Generic_External_Memory
+ PARAMETER HW_VER = 1.03.a
+ PARAMETER C_NUM_BANKS_MEM = 1
+ PARAMETER C_MEM0_WIDTH = 16
+ PARAMETER C_INCLUDE_DATAWIDTH_MATCHING_0 = 1
+ PARAMETER C_MEM0_TYPE = 4
+ PARAMETER C_TCEDV_PS_MEM_0 = 60000
+ PARAMETER C_TAVDV_PS_MEM_0 = 6000
+ PARAMETER C_THZCE_PS_MEM_0 = 7000
+ PARAMETER C_TWC_PS_MEM_0 = 80000
+ PARAMETER C_TWP_PS_MEM_0 = 45000
+ PARAMETER C_TLZWE_PS_MEM_0 = 6000
+ PARAMETER C_MAX_MEM_WIDTH = 16
+ PARAMETER C_TWPH_PS_MEM_0 = 10000
+ PARAMETER C_WR_REC_TIME_MEM_0 = 10000
+ PARAMETER C_S_AXI_MEM_PROTOCOL = axi4lite
+ PARAMETER C_S_AXI_MEM_ID_WIDTH = 1
+ PARAMETER C_S_AXI_EN_REG = 1
+ PARAMETER C_INTERCONNECT_S_AXI_MEM_MASTERS = microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC
+ PARAMETER C_S_AXI_MEM0_BASEADDR = 0xbf000000
+ PARAMETER C_S_AXI_MEM0_HIGHADDR = 0xbfffffff
+ PARAMETER C_S_AXI_REG_BASEADDR = 0x79e00000
+ PARAMETER C_S_AXI_REG_HIGHADDR = 0x79e0ffff
+ BUS_INTERFACE S_AXI_MEM = axi4_0
+ BUS_INTERFACE S_AXI_REG = axi4lite_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT RdClk = clk_100_0000MHz
+ PORT Mem_WEN = Generic_Memory_we_n
+ PORT Mem_RPN = Generic_Memory_reset
+ PORT Mem_OEN = Generic_Memory_oe_n
+ PORT Mem_DQ = Generic_Memory_data
+ PORT Mem_CEN = Generic_Memory_ce_n
+ PORT Mem_A = 0b00000000 & Generic_Memory_address & 0b0
+ PORT Mem_BEN = Generic_External_Memory_Mem_BEN
+END
+
+BEGIN axi_ethernetlite
+ PARAMETER INSTANCE = Generic_Ethernet_10_100
+ PARAMETER HW_VER = 1.01.b
+ PARAMETER C_BASEADDR = 0x40e00000
+ PARAMETER C_HIGHADDR = 0x40e0ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT PHY_tx_en = Generic_Ethernet_10_100_PHY_tx_en
+ PORT PHY_tx_clk = Generic_Ethernet_10_100_PHY_tx_clk
+ PORT PHY_tx_data = Generic_Ethernet_10_100_PHY_tx_data
+ PORT PHY_rx_er = Generic_Ethernet_10_100_PHY_rx_er
+ PORT PHY_dv = Generic_Ethernet_10_100_PHY_dv
+ PORT PHY_rx_clk = Generic_Ethernet_10_100_PHY_rx_clk
+ PORT PHY_rx_data = Generic_Ethernet_10_100_PHY_rx_data
+ PORT PHY_crs = mii_to_rmii_0_Rmii2Mac_crs
+ PORT PHY_col = mii_to_rmii_0_Rmii2Mac_col
+ PORT PHY_MDIO = Generic_Ethernet_10_100_PHY_MDIO
+ PORT PHY_MDC = Generic_Ethernet_10_100_PHY_MDC
+ PORT IP2INTC_Irpt = Generic_Ethernet_10_100_IP2INTC_Irpt
+ PORT PHY_rst_n = Generic_Ethernet_10_100_PHY_rst_n
+END
+

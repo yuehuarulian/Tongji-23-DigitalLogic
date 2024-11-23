@@ -1,0 +1,33 @@
+
+**** Build of configuration Debug for project eth_test ****
+
+make all 
+Building file: ../src/xemaclite_polled_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../eth_test_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.40.b -mno-xl-soft-mul -MMD -MP -MF"src/xemaclite_polled_example.d" -MT"src/xemaclite_polled_example.d" -o"src/xemaclite_polled_example.o" "../src/xemaclite_polled_example.c"
+Finished building: ../src/xemaclite_polled_example.c
+' '
+Building target: eth_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../eth_test_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.40.b -mno-xl-soft-mul -o"eth_test.elf"  ./src/testperiph.o ./src/xemaclite_example_util.o ./src/xemaclite_polled_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o ./src/xuartlite_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_test.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size eth_test.elf  |tee "eth_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25278	    412	   5360	  31050	   794a	eth_test.elf
+Finished building: eth_test.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck eth_test.elf -hw ../../wlan_hw_platform/system.xml -pe microblaze_0  |tee "eth_test.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.3 Build EDK_P.40xd
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../wlan_hw_platform/system.xml -pe microblaze_0
+eth_test.elf 
+
+ELF file	: eth_test.elf
+elfcheck passed.
+Finished building: eth_test.elf.elfcheck
+' '

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="E:\Project\N4\lab10\SDK\SDK_Export\lab10_hw_platform\system.bit" key="lab10_hw_platform-bitFile"/>
+	<item value="E:\Project\N4\lab10\SDK\SDK_Export\vga\Debug\vga.elf" key="lab10_hw_platform-microblaze_0-initElf"/>
+	<item value="E:\Project\N4\lab10\SDK\SDK_Export\lab10_hw_platform\system_bd.bmm" key="lab10_hw_platform-bmmFile"/>
+</section>

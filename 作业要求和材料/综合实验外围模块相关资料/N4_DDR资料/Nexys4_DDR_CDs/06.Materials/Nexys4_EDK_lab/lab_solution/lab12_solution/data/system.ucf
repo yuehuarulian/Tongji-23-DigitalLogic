@@ -1,0 +1,22 @@
+#
+# pin constraints
+#
+#
+# additional constraints
+#
+
+# Clock signal
+NET "clock_generator_0_CLKIN_pin"   LOC = "E3"	| IOSTANDARD = "LVCMOS33";
+NET "clock_generator_0_CLKIN_pin" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100 MHz HIGH 50%; 
+ 
+# Switches
+NET "RESET"								LOC = "U9"	| IOSTANDARD = "LVCMOS33";
+ 
+# USB-RS232 Interface
+NET "RS232_Uart_1_sin"				LOC = "C4"	| IOSTANDARD = "LVCMOS33";
+NET "RS232_Uart_1_sout"				LOC = "D4"	| IOSTANDARD = "LVCMOS33";
+
+# PWM Audio Amplifier
+NET "audio_ip_0_pwm_out_pin"		LOC = "A11"	| IOSTANDARD = "LVCMOS33";
+NET "audio_ip_0_pwm_sd_pin"		LOC = "D12"	| IOSTANDARD = "LVCMOS33";

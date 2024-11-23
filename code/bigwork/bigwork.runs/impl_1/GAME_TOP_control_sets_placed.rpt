@@ -1,0 +1,78 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Thu Jan 11 00:26:46 2024
+| Host         : DELL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file GAME_TOP_control_sets_placed.rpt
+| Design       : GAME_TOP
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    25 |
+| Unused register locations in slices containing registers |    69 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              43 |           22 |
+| No           | No                    | Yes                    |              12 |           10 |
+| No           | Yes                   | No                     |             280 |          147 |
+| Yes          | No                    | No                     |              43 |           16 |
+| Yes          | No                    | Yes                    |              12 |            8 |
+| Yes          | Yes                   | No                     |             341 |          174 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+--------------------------------------+--------------------------------------------+------------------+----------------+
+|         Clock Signal         |             Enable Signal            |              Set/Reset Signal              | Slice Load Count | Bel Load Count |
++------------------------------+--------------------------------------+--------------------------------------------+------------------+----------------+
+| ~clk_2_BUFG                  |                                      |                                            |                1 |              2 |
+|  tetris_new_reg[199]_i_3_n_0 |                                      |                                            |                2 |              2 |
+|  uut/inst/clk_out2           |                                      |                                            |                2 |              2 |
+|  uut_divider/clk1000hz       |                                      | uut_score/shift[3]_i_1_n_0                 |                1 |              4 |
+|  uut_divider/clk1000hz       |                                      | uut_score/shift[7]_i_1_n_0                 |                1 |              4 |
+| ~clk_2_BUFG                  | uut_mp3/pre_id0                      |                                            |                2 |              4 |
+| ~clk_2_BUFG                  | uut_mp3/cntData[4]_i_2_n_0           | uut_mp3/cntData[4]_i_1_n_0                 |                2 |              5 |
+| ~clk_2_BUFG                  | uut_mp3/cmd[25]_i_1_n_0              |                                            |                2 |              6 |
+|  uut/inst/clk_out1           |                                      |                                            |                5 |              6 |
+| ~clk_2_BUFG                  |                                      | uut_mp3/pre_id0                            |                5 |              8 |
+|  uut_divider/clk1000hz       |                                      |                                            |                5 |             11 |
+|  uut/inst/clk_out1           |                                      | uut_vga/h_cnt[11]_i_2_n_0                  |               10 |             12 |
+|  uut/inst/clk_out1           | uut_vga/f_cnt[11]_i_2_n_0            | uut_vga/clk1s                              |                4 |             12 |
+|  uut/inst/clk_out1           | uut_vga/v_cnt[11]_i_1_n_0            | uut_vga/h_cnt[11]_i_2_n_0                  |                8 |             12 |
+| ~clk_2_BUFG                  | uut_mp3/addra[0]_i_1_n_0             | uut_mp3/pre_id0                            |                4 |             14 |
+| ~clk_2_BUFG                  | uut_mp3/cntdown[20]_i_1_n_0          | uut_mp3/cntdown[31]_i_1_n_0                |                6 |             15 |
+|  tetris_new_reg[199]_i_3_n_0 | uut_vga/uut_tetris/randn[15]_i_1_n_0 |                                            |                4 |             16 |
+| ~clk_2_BUFG                  | uut_mp3/cntdown[20]_i_1_n_0          |                                            |                8 |             17 |
+|  clk_2_BUFG                  |                                      |                                            |                7 |             20 |
+| ~clk_2_BUFG                  | uut_mp3/cntSended[31]_i_1_n_0        | uut_mp3/pre_id0                            |                8 |             32 |
+| ~clk_2_BUFG                  | uut_mp3/music_data[31]_i_1_n_0       | uut_mp3/pre_id0                            |                8 |             32 |
+|  uut/inst/clk_out2           |                                      | uut_divider/clear                          |                8 |             32 |
+|  uut/inst/clk_out2           |                                      | uut_divider/cnt21_carry__3_n_7             |                8 |             32 |
+|  tetris_new_reg[199]_i_3_n_0 |                                      | uut_vga/uut_tetris/tetris_new[199]_i_1_n_0 |              124 |            200 |
+|  tetris_new_reg[199]_i_3_n_0 | uut_vga/uut_tetris/randn[15]_i_1_n_0 | uut_vga/uut_tetris/tetris_new[199]_i_1_n_0 |              142 |            231 |
++------------------------------+--------------------------------------+--------------------------------------------+------------------+----------------+
+
+

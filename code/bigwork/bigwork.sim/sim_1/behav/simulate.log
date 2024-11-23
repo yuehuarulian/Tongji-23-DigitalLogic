@@ -1,0 +1,17 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MP3_tb.uut_mp3.id_0_wings_of_piano.inst.native_mem_module.blk_mem_gen_v8_3_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MP3_tb.uut_mp3.id_1_PaperPlane.inst.native_mem_module.blk_mem_gen_v8_3_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MP3_tb.uut_mp3.id_2_Pure_32.inst.native_mem_module.blk_mem_gen_v8_3_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MP3_tb.uut_mp3.id_3_lady.inst.native_mem_module.blk_mem_gen_v8_3_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MP3_tb.uut_mp3.id_4_Tempestissimo.inst.native_mem_module.blk_mem_gen_v8_3_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.

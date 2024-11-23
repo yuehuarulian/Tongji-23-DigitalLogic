@@ -1,0 +1,3 @@
+PROCESSOR=microblaze_0
+REPOSITORIES=-lp E:/Project/N4/lab10
+HWSPEC=../lab10_hw_platform/system.xml

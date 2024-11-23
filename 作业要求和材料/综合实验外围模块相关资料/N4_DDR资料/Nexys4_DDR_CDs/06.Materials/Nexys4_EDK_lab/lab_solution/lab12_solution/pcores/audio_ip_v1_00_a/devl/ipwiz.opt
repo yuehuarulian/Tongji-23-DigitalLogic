@@ -1,0 +1,10 @@
+-batch 
+-create audio_ip 
+-ver 1.00.a 
+-dir "D:\Nexys4_lab\lab" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 1 
+-xps 
+-ise 
+-driver 

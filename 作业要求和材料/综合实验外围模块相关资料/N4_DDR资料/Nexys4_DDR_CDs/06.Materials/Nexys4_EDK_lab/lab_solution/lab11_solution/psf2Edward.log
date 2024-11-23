@@ -1,0 +1,105 @@
+WARNING:EDK:4092 - IPNAME: proc_sys_reset, INSTANCE: proc_sys_reset_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 22 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 35 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_i_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 42 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 51 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_d_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 58 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: microblaze_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 67 
+WARNING:EDK:4092 - IPNAME: microblaze, INSTANCE: microblaze_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 74 
+WARNING:EDK:4092 - IPNAME: mdm, INSTANCE: debug_module - Pre-Production version
+   not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 97 
+WARNING:EDK:4092 - IPNAME: clock_generator, INSTANCE: clock_generator_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 110 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi4lite_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 122 
+WARNING:EDK:4092 - IPNAME: axi_uartlite, INSTANCE: axi_uartlite_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 130 
+WARNING:EDK:4092 - IPNAME: plb_v46, INSTANCE: plb_v46_0 - Pre-Production version
+   not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 152 
+WARNING:EDK:4092 - IPNAME: axi_plbv46_bridge, INSTANCE: axi_plbv46_bridge_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 159 
+WARNING:EDK:4092 - IPNAME: proc_sys_reset, INSTANCE: proc_sys_reset_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 22 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 35 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_i_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 42 
+WARNING:EDK:4092 - IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 51 
+WARNING:EDK:4092 - IPNAME: lmb_bram_if_cntlr, INSTANCE: microblaze_0_d_bram_ctrl
+   - Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 58 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: microblaze_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 67 
+WARNING:EDK:4092 - IPNAME: microblaze, INSTANCE: microblaze_0 - Pre-Production
+   version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 74 
+WARNING:EDK:4092 - IPNAME: mdm, INSTANCE: debug_module - Pre-Production version
+   not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 97 
+WARNING:EDK:4092 - IPNAME: clock_generator, INSTANCE: clock_generator_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 110 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi4lite_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 122 
+WARNING:EDK:4092 - IPNAME: axi_uartlite, INSTANCE: axi_uartlite_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 130 
+WARNING:EDK:4092 - IPNAME: plb_v46, INSTANCE: plb_v46_0 - Pre-Production version
+   not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 152 
+WARNING:EDK:4092 - IPNAME: axi_plbv46_bridge, INSTANCE: axi_plbv46_bridge_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   E:\digilent\program\usb\system.mhs line 159 
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 3 slave(s) 
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.

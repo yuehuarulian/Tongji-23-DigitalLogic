@@ -1,0 +1,14 @@
+#Tue Dec 03 13:19:34 CST 2013
+com.xilinx.sdk.linkgen.prefs.default\:.sbss2=microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl
+com.xilinx.sdk.linkgen.prefs.default\:.sbss=microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl
+com.xilinx.sdk.linkgen.prefs.default\:.rodata=microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl
+com.xilinx.sdk.linkgen.prefs.default\:Heap=microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl
+com.xilinx.sdk.linkgen.prefs.default\:.data=microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl
+com.xilinx.sdk.linkgen.prefs.default\:.sdata=microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl
+com.xilinx.sdk.linkgen.prefs.default\:Stack=microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl
+com.xilinx.sdk.linkgen.prefs.default\:Heap-size=1024
+com.xilinx.sdk.linkgen.prefs.default\:Stack-size=1024
+com.xilinx.sdk.linkgen.prefs.default\:.text=microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl
+eclipse.preferences.version=1
+com.xilinx.sdk.linkgen.prefs.default\:.bss=microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl
+com.xilinx.sdk.linkgen.prefs.default\:.sdata2=microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl
